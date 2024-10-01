@@ -34,6 +34,7 @@ define HISILICON_OPENSDK_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 755 -d $(TARGET_DIR)/usr/lib/sensors
 	$(INSTALL) -D -m 0644 $(@D)/libraries/sensor/$(OPENIPC_SOC_FAMILY)/sony_imx335/libsns_imx335.so $(TARGET_DIR)/usr/lib/sensors
 	$(INSTALL) -D -m 0644 $(@D)/libraries/sensor/$(OPENIPC_SOC_FAMILY)/sony_imx307/libsns_imx307.so $(TARGET_DIR)/usr/lib/sensors
+	$(INSTALL) -D -m 0644 $(@D)/libraries/sensor/$(OPENIPC_SOC_FAMILY)/galaxycore_gc4653_2L/libsns_gc4653_2l.so $(TARGET_DIR)/usr/lib/sensors
 endef
 
 $(eval $(kernel-module))
